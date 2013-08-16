@@ -1,0 +1,97 @@
+/* Base Styles */
+
+body {
+  margin: 0;
+  font-family: 'arial', 'san-serif';
+  font-size: 14px;
+}
+
+/* Navigation */
+
+.navigation-container {
+  border-bottom: 1px solid #000000;
+  background: #2d2d2d;
+}
+
+.nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav > li {
+  display: inline-block;
+}
+
+.nav > li > a {
+  display: block;
+  padding: 10px;
+  color: #bbbbbb;
+  text-decoration: none;
+}
+
+.nav > li > .active,
+.nav > li > a:hover {
+  color: #ffffff;
+}
+
+/* Search */
+
+.search-container {
+  border-bottom: 1px solid #FDFDFD;
+  background: #F4F4F4;
+  padding: 15px 10px;
+}
+
+/* Filters */
+
+.filters-container {
+  border-bottom: 2px solid #F4F4F4;
+  background: #FFFFFF;
+}
+
+.filter {
+  padding: 0 0 0 75px;
+  margin: 0;
+  list-style: none;
+}
+
+.filter > li {
+  display: inline-block;
+}
+
+.filter > li > a {
+  display: block;
+  padding: 10px;
+  color: grey;
+  text-decoration: none;
+}
+
+.filter > li > a:hover {
+  color: black;
+}
+
+.filter > li > .active {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+/* Main */
+
+.main-container {
+  padding: 30px 0 0 75px;
+  width: 540px;
+}
+
+.result-title {
+  font-size: 18px;
+}
+
+.result-url {
+  color: #59A75B;
+}
+
+<a class="result-title" href="#">Awesome Fake Result</a>
+<p class="result-url">www.awesomesauce.com</p>
+<p class="result-description">Something that is more awesome than awesome. Super awesome sauce awesome awesome awesome.</p>
+
