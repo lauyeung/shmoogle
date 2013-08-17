@@ -1,9 +1,28 @@
 /* Base Styles */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'arial', 'san-serif';
   font-size: 14px;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -32px;
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
 }
 
 /* Navigation */
@@ -78,8 +97,41 @@ body {
 
 /* Main */
 
-.main-container {
-  padding: 30px 0 0 75px;
+.home {
+  text-align: center;
+}
+
+.home > .big {
+  font-size: 60px;
+  font-family: garamond;
+  font-weight: bold;
+}
+
+.home > span {
+  font-size: 60px;
+  font-family: garamond;
+  font-weight: bold;
+}
+
+.one {
+  color: #164CF6;
+}
+
+.two {
+  color: #E42630;
+}
+
+.three {
+  color: #F1A116;
+}
+
+.four {
+  color: #008E1C;
+}
+
+
+.results {
+  padding: 30px 0 30px 75px;
   width: 540px;
 }
 
@@ -91,7 +143,38 @@ body {
   color: #59A75B;
 }
 
-<a class="result-title" href="#">Awesome Fake Result</a>
-<p class="result-url">www.awesomesauce.com</p>
-<p class="result-description">Something that is more awesome than awesome. Super awesome sauce awesome awesome awesome.</p>
+/* Footer */
+
+.footer-container, .wrapper:after {
+  height: 32px;
+}
+
+.footer-container {
+  border-top: 2px solid #F4F4F4;
+  background: #F4F4F4;
+}
+
+.footer {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: right;
+  font-size: 12px;
+}
+
+.footer > li {
+  display: inline-block;
+}
+
+.footer > li > a {
+  display: block;
+  padding: 10px;
+  color: grey;
+  text-decoration: none;
+}
+
+.footer > li > a:hover {
+  text-decoration: underline;
+}
+
 

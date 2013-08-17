@@ -11,80 +11,120 @@
 
 </head>
   <body>
+    <div class="wrapper">
+      <div class="navigation-container">
+        <ul class="nav">
+          <li>
+            <a class="active" href="#">+You</a>
+          </li>
+          <li>
+            <a href="index.html">Search</a>
+          </li>
+          <li>
+            <a href="#">Images</a>
+          </li>
+          <li>
+            <a href="#">Maps</a>
+          </li>
+          <li>
+            <a href="#">Play</a>
+          </li>
+          <li>
+            <a href="#">YouTube</a>
+          </li>
+          <li>
+            <a href="#">News</a>
+          </li>
+          <li>
+            <a href="#">Gmail</a>
+          </li>
+          <li>
+            <a href="#">Drive</a>
+          </li>
+          <li>
+            <a href="#">Calendar</a>
+          </li>
+        </ul>
+      </div>
 
-    <div class="navigation-container">
-      <ul class="nav">
+      <div class="search-container">
+      <form method="link" action="results.html">
+        <label>Shmoogle</label>
+        <input type="search" name="search">
+        <input type="submit" value="Search">
+
+      </form>
+      </div>
+
+      <div class="filters-container">
+      <ul class="filter">
         <li>
-          <a class="active" href="#">+You</a>
+          <a class="active" href="#">Web</a>
         </li>
         <li>
-          <a href="#">Search</a>
+          <a class="nonactive" href="#">Images</a>
         </li>
         <li>
-          <a href="#">Images</a>
+          <a class="nonactive" href="#">Maps</a>
         </li>
         <li>
-          <a href="#">Maps</a>
+          <a class="nonactive" href="#">Shopping</a>
         </li>
         <li>
-          <a href="#">Play</a>
+          <a class="nonactive" href="#">News</a>
         </li>
         <li>
-          <a href="#">YouTube</a>
+          <a class="nonactive" href="#">More</a>
         </li>
         <li>
-          <a href="#">News</a>
-        </li>
-        <li>
-          <a href="#">Gmail</a>
-        </li>
-        <li>
-          <a href="#">Drive</a>
-        </li>
-        <li>
-          <a href="#">Calendar</a>
+          <a class="nonactive" href="#">Search tools</a>
         </li>
       </ul>
+      </div>
+
+      <div class="main-container">
+      <!-- Where page specific content will be inserted -->
+        <%= yield %>
+        <div class="push"></div>
+      </div>
+
     </div>
 
-    <div class="search-container">
-    <form>
-      <label>Shmoogle</label>
-      <input type="search" name="search">
-      <input type="submit" value="Search">
-    </form>
-    </div>
+      <div class="footer-container">
+        <ul class="footer">
+          <li>
+            <a class="active" href="#">+You</a>
+          </li>
+          <li>
+            <a href="index.html">Search</a>
+          </li>
+          <li>
+            <a href="#">Images</a>
+          </li>
+          <li>
+            <a href="#">Maps</a>
+          </li>
+          <li>
+            <a href="#">Play</a>
+          </li>
+          <li>
+            <a href="#">YouTube</a>
+          </li>
+          <li>
+            <a href="#">News</a>
+          </li>
+          <li>
+            <a href="#">Gmail</a>
+          </li>
+          <li>
+            <a href="#">Drive</a>
+          </li>
+          <li>
+            <a href="#">Calendar</a>
+          </li>
+        </ul>
+      </div>
 
-    <div class="filters-container">
-    <ul class="filter">
-      <li>
-        <a class="active" href="#">Web</a>
-      </li>
-      <li>
-        <a class="nonactive" href="#">Images</a>
-      </li>
-      <li>
-        <a class="nonactive" href="#">Maps</a>
-      </li>
-      <li>
-        <a class="nonactive" href="#">Shopping</a>
-      </li>
-      <li>
-        <a class="nonactive" href="#">News</a>
-      </li>
-      <li>
-        <a class="nonactive" href="#">More</a>
-      </li>
-      <li>
-        <a class="nonactive" href="#">Search tools</a>
-      </li>
-    </ul>
-    </div>
-
-    <div class="main-container">
-    <!-- Where page specific content will be inserted -->
-    <%= yield %>
-    </div>
 
   </body>
 </html>

@@ -5,6 +5,8 @@ Shmoogle::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
+  get 'results' => 'welcome#results'
+  get 'index' => 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
