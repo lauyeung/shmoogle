@@ -97,8 +97,14 @@ body {
 
 /* Main */
 
+/* Homepage */
+
 .home {
-  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -126.5px;
+  margin-top: -46.5px;
 }
 
 .home > .big {
@@ -129,6 +135,12 @@ body {
   color: #008E1C;
 }
 
+.home > .searchbox
+  {
+    text-align: center;
+  }
+
+/* Results Page */
 
 .results {
   padding: 30px 0 30px 75px;
